@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EYSnapAlert_Example' do
+  pod 'EYSnapAlert', :path => '../'
+
+  target 'EYSnapAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
