@@ -1,4 +1,4 @@
-# CKLoadingView
+# EYSnapAlert
 
 A simple alert box designed for iOS, with simple API. 
 
