@@ -1,29 +1,46 @@
-# EYSnapAlert
+# CKLoadingView
 
-[![CI Status](http://img.shields.io/travis/enix223/EYSnapAlert.svg?style=flat)](https://travis-ci.org/enix223/EYSnapAlert)
-[![Version](https://img.shields.io/cocoapods/v/EYSnapAlert.svg?style=flat)](http://cocoapods.org/pods/EYSnapAlert)
-[![License](https://img.shields.io/cocoapods/l/EYSnapAlert.svg?style=flat)](http://cocoapods.org/pods/EYSnapAlert)
-[![Platform](https://img.shields.io/cocoapods/p/EYSnapAlert.svg?style=flat)](http://cocoapods.org/pods/EYSnapAlert)
+A simple alert box designed for iOS, with simple API. 
 
-## Example
+-----
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+# Installation
 
-## Requirements
-
-## Installation
-
-EYSnapAlert is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
+## Pod
 ```ruby
-pod "EYSnapAlert"
+pod 'EYSnapAlert'
 ```
 
-## Author
+## Manually
 
-enix223, enix223@163.com
+Drag 'EYSnapAlert.swift' to your project
 
-## License
+# Usage
 
-EYSnapAlert is available under the MIT license. See the LICENSE file for more info.
+### Show an alert with default values
+
+Show a alert with a single line
+
+```swift
+EYSnapAlert.show(message: "世界，你好", onTap: nil, onDimiss: nil)
+```
+
+### Show an alert with user specific parameters
+
+```swift
+EYSnapAlert.show(message: String(format: "你好，世界, [Style: %@]", cell.textLabel!.text!),
+                 backgroundColor: UIColor.black,
+                 textSize: 12,
+                 textColor: UIColor.white,
+                 duration: 3,
+                 cornerRadius: 5,
+                 style: .fade,
+                 onTap: { (alert) in
+                    print("Alert is tap...")
+                 },
+                 onDimiss: {() in
+                    print("Alert was dismissed")
+                 })
+```
+
+For more detail, please refer to the Example project.

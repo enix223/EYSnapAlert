@@ -1,0 +1,6 @@
+framework module EYSnapAlert {
+  umbrella header "EYSnapAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

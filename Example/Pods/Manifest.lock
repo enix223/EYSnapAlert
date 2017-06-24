@@ -1,0 +1,16 @@
+PODS:
+  - EYSnapAlert (0.1.0)
+
+DEPENDENCIES:
+  - EYSnapAlert (from `../`)
+
+EXTERNAL SOURCES:
+  EYSnapAlert:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EYSnapAlert: 25858ee313b63a81c379c940772c9455033fc550
+
+PODFILE CHECKSUM: ccb00c63546ade8c576665b329bfd95e82b5b59c
+
+COCOAPODS: 1.2.0

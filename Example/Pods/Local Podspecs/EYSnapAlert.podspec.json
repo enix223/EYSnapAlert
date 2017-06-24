@@ -1,0 +1,22 @@
+{
+  "name": "EYSnapAlert",
+  "version": "0.1.0",
+  "summary": "A short description of EYSnapAlert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/enix223/EYSnapAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "enix223": "enix223@163.com"
+  },
+  "source": {
+    "git": "https://github.com/enix223/EYSnapAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EYSnapAlert/Classes/**/*"
+}

@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2525ED4CFC7C1FF873D51112 /* Pods-EYSnapAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EYSnapAlert_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EYSnapAlert_Tests/Pods-EYSnapAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4E7B48ABC6807107BB598187 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4E7B48ABC6807107BB598187 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* EYSnapAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EYSnapAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* EYSnapAlert_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EYSnapAlert_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6AC576979D87DF4AA2EE8095 /* EYSnapAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EYSnapAlert.podspec; path = ../EYSnapAlert.podspec; sourceTree = "<group>"; };
+		6AC576979D87DF4AA2EE8095 /* EYSnapAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EYSnapAlert.podspec; path = ../EYSnapAlert.podspec; sourceTree = "<group>"; };
 		6AF933C3785378A930E6A26A /* Pods-EYSnapAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EYSnapAlert_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EYSnapAlert_Example/Pods-EYSnapAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6B56590DF38FC17A0528D0FE /* Pods-EYSnapAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EYSnapAlert_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EYSnapAlert_Tests/Pods-EYSnapAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0AB3B2C82055B187C4D2D08 /* Pods-EYSnapAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EYSnapAlert_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EYSnapAlert_Example/Pods-EYSnapAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C8D1BA4E534C4672871B4C02 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C8D1BA4E534C4672871B4C02 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CC2F0FCE64534978C51CD79D /* Pods_EYSnapAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EYSnapAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE86D337F6EBEE6075C5BDA /* Pods_EYSnapAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EYSnapAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N9HG25YR8L;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N9HG25YR8L;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -496,10 +498,12 @@
 			baseConfigurationReference = C0AB3B2C82055B187C4D2D08 /* Pods-EYSnapAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9HG25YR8L;
 				INFOPLIST_FILE = EYSnapAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.robotbros.EYSnapAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -510,10 +514,12 @@
 			baseConfigurationReference = 6AF933C3785378A930E6A26A /* Pods-EYSnapAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9HG25YR8L;
 				INFOPLIST_FILE = EYSnapAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.robotbros.EYSnapAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -523,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B56590DF38FC17A0528D0FE /* Pods-EYSnapAlert_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N9HG25YR8L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2525ED4CFC7C1FF873D51112 /* Pods-EYSnapAlert_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N9HG25YR8L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
