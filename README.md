@@ -22,23 +22,27 @@ Drag 'EYSnapAlert.swift' to your project
 Show a alert with a single line
 
 ```swift
-EYSnapAlert.show(message: "世界，你好", onTap: nil, onDimiss: nil)
+// Show alert with default settings
+EYSnapAlert.show(message: "世界，你好")
 ```
 
 ### Show an alert with user specific parameters
 
 ```swift
+// Show alert with fully customized setttings
 EYSnapAlert.show(message: String(format: "你好，世界, [Style: %@]", cell.textLabel!.text!),
                  backgroundColor: UIColor.black,
                  textSize: 12,
                  textColor: UIColor.white,
                  duration: 3,
+                 animationTime: 0.2,
                  cornerRadius: 5,
-                 style: .fade,
-                 onTap: { (alert) in
+                 style: styles[indexPath.row].style,
+                    onTap: { (alert) in
+                    alert.hide()
                     print("Alert is tap...")
                  },
-                 onDimiss: {() in
+                 onDimissed: {() in
                     print("Alert was dismissed")
                  })
 ```
