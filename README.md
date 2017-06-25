@@ -2,6 +2,11 @@
 
 A simple alert box designed for iOS, with simple API. 
 
+[![Pod Version](http://img.shields.io/cocoapods/v/EYSnapAlert.svg)](http://cocoadocs.org/docsets/EYSnapAlert/)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+
+![screenshot](Media/screenshot.gif)  
+
 -----
 
 # Installation
