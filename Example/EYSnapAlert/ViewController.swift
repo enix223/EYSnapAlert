@@ -9,14 +9,34 @@
 import UIKit
 import EYSnapAlert
 
+class Style {
+    let name: String
+    let style: EYSnapAlertStyle
+    
+    init(name: String, style: EYSnapAlertStyle) {
+        self.name = name
+        self.style = style
+    }
+}
+
 class ViewController: UITableViewController {
 
-    let styles = ["Fade in fade out", "Popup"]
+    let styles: [Style] = [
+        Style(name: "Fade in & out", style: .fade),
+        Style(name: "Popup", style: .popUp),
+        Style(name: "Slide in from right", style: .slideInFromRight),
+        Style(name: "Slide in from bottom", style: .slideInFromBottom),
+        Style(name: "Flip horizontal", style: .flipHorizontal),
+        Style(name: "Sticky up", style: .stickyUp)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        EYSnapAlert.show(message: "世界，你好", onTap: nil, onDimiss: nil)
+        title = "EYSnapAlert"
+        
+        // Show alert with default settings
+        EYSnapAlert.show(message: "世界，你好")
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,24 +58,28 @@ class ViewController: UITableViewController {
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         
-        cell?.textLabel?.text = styles[indexPath.row]
+        cell?.textLabel?.text = styles[indexPath.row].name
         
         return cell!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)!
+        
+        // Show alert with fully customized setttings
         EYSnapAlert.show(message: String(format: "你好，世界, [Style: %@]", cell.textLabel!.text!),
                          backgroundColor: UIColor.black,
                          textSize: 12,
                          textColor: UIColor.white,
                          duration: 3,
+                         animationTime: 0.2,
                          cornerRadius: 5,
-                         style: .fade,
+                         style: styles[indexPath.row].style,
                          onTap: { (alert) in
+                            alert.hide()
                             print("Alert is tap...")
                          },
-                         onDimiss: {() in
+                         onDimissed: {() in
                             print("Alert was dismissed")
                          })
     }
