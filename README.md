@@ -9,6 +9,10 @@ A simple alert box designed for iOS, with simple API.
 
 -----
 
+# Requirement
+
+Library is developed and tested with XCode 8+ and Swift 3.0
+
 # Installation
 
 ## Pod
@@ -42,7 +46,7 @@ EYSnapAlert.show(message: String(format: "你好，世界, [Style: %@]", cell.te
                  duration: 3,
                  animationTime: 0.2,
                  cornerRadius: 5,
-                 style: styles[indexPath.row].style,
+                 style: .popUp,
                     onTap: { (alert) in
                     alert.hide()
                     print("Alert is tap...")
