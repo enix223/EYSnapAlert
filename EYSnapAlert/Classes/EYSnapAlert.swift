@@ -162,7 +162,7 @@ public class EYSnapAlert
     public func hide() {
         switch style {
         case .popUp:
-            let anim = CABasicAnimation(keyPath: "transform.scale")
+            let anim = CABasicAnimation(keyPath: "transform")
             anim.fromValue = CATransform3DMakeScale(1, 1, 1)
             anim.toValue = CATransform3DMakeScale(0, 0, 1)
             anim.duration = animationTime
@@ -276,7 +276,7 @@ public class EYSnapAlert
             layer.transform = tr
             CATransaction.commit()
             
-            let anim = CAKeyframeAnimation(keyPath: "transform.scale")
+            let anim = CAKeyframeAnimation(keyPath: "transform")
             anim.values = [CATransform3DMakeScale(0, 0, 1),
                            CATransform3DMakeScale(1.2, 1.2, 1),
                            CATransform3DMakeScale(1, 1, 1)]
