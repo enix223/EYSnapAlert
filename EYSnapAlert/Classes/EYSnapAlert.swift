@@ -239,7 +239,7 @@ public class EYSnapAlert
         case .flipHorizontal:
             var toAngle = CATransform3DIdentity
             toAngle.m34 = -1.0 / bounds.width
-            toAngle = CATransform3DRotate(toAngle, 2 * CGFloat(M_PI_2) / 3, 0, -1, 0)
+            toAngle = CATransform3DRotate(toAngle, CGFloat.pi / 3, 0, -1, 0)
             
             let anim1 = CABasicAnimation(keyPath: "opacity")
             anim1.fromValue = 1
@@ -383,7 +383,7 @@ public class EYSnapAlert
             layer.position = toPoint
         case .flipHorizontal:
             var fromAngle = CATransform3DIdentity
-            fromAngle = CATransform3DRotate(fromAngle, 2 * CGFloat(M_PI_2) / 3, 0, -1, 0)
+            fromAngle = CATransform3DRotate(fromAngle, CGFloat.pi / 3, 0, -1, 0)
             fromAngle.m34 = -1.0 / bounds.width
             
             CATransaction.begin()
